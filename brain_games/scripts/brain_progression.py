@@ -4,20 +4,24 @@ import random
 from brain_games.cli import welcome_user
 
 
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
+def generate_progression():
+    start = random.randint(1, 10)
+    step = random.randint(1, 5)
+    length = random.randint(5, 10)
+    progression = [start + step * i for i in range(length)]
+    gap_index = random.randint(0, length - 1)
+    result = progression[gap_index]
+    progression[gap_index] = "..."
+    progression_str = ' '.join(str(x) for x in progression)
+    return progression_str, result
 
 
 def main():
     name = welcome_user()
     count = 0
     while count < 3:
-        random_int_1 = random.randint(1, 100)
-        random_int_2 = random.randint(1, 100)
-        print('Question:', random_int_1, random_int_2)
-        result = gcd(random_int_1, random_int_2)
+        progression, result = generate_progression()
+        print(f'Question: {progression}')
         answer = prompt.integer('Your answer: ')
         if answer == result:
             print('Correct!')
