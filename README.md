@@ -14,3 +14,6 @@ Demonstration of brain-gcd:
 
 Demonstration of brain-progression:
 [![asciicast](https://asciinema.org/a/oEC7PpIqqbHocoF58HWjbR375)](https://asciinema.org/a/oEC7PpIqqbHocoF58HWjbR375?autoplay=1)
+
+Demonstration of brain-prime:
+[![asciicast](https://asciinema.org/a/dpm3TccXr3PBM4rYbmyJkCr2N)](https://asciinema.org/a/dpm3TccXr3PBM4rYbmyJkCr2N?autoplay=1)
