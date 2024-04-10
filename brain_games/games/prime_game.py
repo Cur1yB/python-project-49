@@ -18,9 +18,12 @@ def prime_game(name):
         elif answer == 'no' and not is_prime(random_int):
             print('Correct!')
             count += 1
-        else:
+        elif answer == 'yes' and not is_prime(random_int):
             print("'yes' is wrong answer ;(."
                   + f" Correct answer was 'no'. \nLet's try again, {name}!")
+        else:
+            print("'no' is wrong answer ;(."
+                  + f" Correct answer was 'yes'. \nLet's try again, {name}!")
 
 
 def is_prime(n):
