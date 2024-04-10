@@ -1,5 +1,4 @@
 .SILENT:
-	brain_games
 
 install:
 	poetry install
