@@ -1,12 +1,16 @@
 import prompt
 import random
 
+MAX_ROUNDS = 3
+MIN_NUMBER = 1
+MAX_NUMBER = 100
+
 
 def gcd_game(name):
     count = 0
-    while count < 3:
-        random_int_1 = random.randint(1, 100)
-        random_int_2 = random.randint(1, 100)
+    while count < MAX_ROUNDS:
+        random_int_1 = random.randint(MIN_NUMBER, MAX_NUMBER)
+        random_int_2 = random.randint(MIN_NUMBER, MAX_NUMBER)
         print('Question:', random_int_1, random_int_2)
         result = gcd(random_int_1, random_int_2)
         answer = prompt.integer('Your answer: ')
