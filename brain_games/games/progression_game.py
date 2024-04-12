@@ -35,6 +35,6 @@ def generate_progression():
     progression = [start + step * i for i in range(length)]
     gap_index = random.randint(0, length - 1)
     result = progression[gap_index]
-    progression[gap_index] = "..."
+    progression[gap_index] = ".."
     progression_str = ' '.join(str(x) for x in progression)
     return progression_str, result
