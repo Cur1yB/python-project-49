@@ -1,5 +1,6 @@
 import prompt
 import random
+from brain_games.scripts.congratulations import congratulations
 
 MAX_ROUNDS = 3
 MIN_NUMBER = 1
@@ -21,9 +22,12 @@ def prime_game(name):
         elif answer == 'yes' and not is_prime(random_int):
             print("'yes' is wrong answer ;(."
                   + f" Correct answer was 'no'. \nLet's try again, {name}!")
+            break
         else:
             print("'no' is wrong answer ;(."
                   + f" Correct answer was 'yes'. \nLet's try again, {name}!")
+            break
+    congratulations(count, MAX_ROUNDS, name)
 
 
 def is_prime(n):

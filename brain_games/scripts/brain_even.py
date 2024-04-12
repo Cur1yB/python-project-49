@@ -7,7 +7,6 @@ def main():
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     even_game(name)
-    print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':

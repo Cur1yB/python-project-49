@@ -1,5 +1,6 @@
 import prompt
 import random
+from brain_games.scripts.congratulations import congratulations
 
 MAX_ROUNDS = 3
 MIN_LENGTH = 5
@@ -23,6 +24,8 @@ def progression_game(name):
             print(f"'{answer}' is wrong answer ;(."
                   + f" Correct answer was '{result}'. \n"
                   + f"Let's try again, {name}!")
+            break
+    congratulations(count, MAX_ROUNDS, name)
 
 
 def generate_progression():
